@@ -17,7 +17,7 @@
   right: 0;
   top: 0;
   width: 35vw;
-  height: 100vh;
+  height: 100dvh;
   background-color: var(--color-primary-dark-red);
 }
 
@@ -65,15 +65,12 @@
 
 @media screen and (max-width: 750px) {
   .burger-menu {
-    width: 60vw;
+    width: 55vw;
   }
 }
 
 @media screen and (max-width: 450px) {
   .burger-menu {
     width: 70vw;
-  }
-  .burger-menu__logo {
-      padding-bottom: 4rem;
   }
 }
