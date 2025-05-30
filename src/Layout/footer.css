@@ -13,13 +13,13 @@
 
 .footer__links-container {
   text-align: left;
-  color: var(--color-secondary-brown);
+  color: var(--color-primary-dark-red);
   padding: 0 50px;
 }
 
 .footer__links-container__title {
   font-family: 'BNBergen-Bold';
-  color: var(--color-secondary-brown);
+  color: var(--color-primary-dark-red);
   text-transform: uppercase;
 }
 
@@ -33,15 +33,15 @@
   cursor: pointer;
   font-family: 'BNBergen-Bold';
   background-color: transparent;
-  border: 2px solid var(--color-secondary-brown);
-  color: var(--color-secondary-brown);
+  border: 2px solid var(--color-primary-dark-red);
+  color: var(--color-primary-dark-red);
   margin-top: 20px;
   font-size: large;
   padding: 5px 20px;
 }
 
 .footer__links-container__button:hover {
-  background-color: var(--color-secondary-brown);
+  background-color: var(--color-primary-dark-red);
   color: var(--color-primary-light-yellow);
   transition: 0.2s ease;
 }
@@ -56,23 +56,43 @@
 
 .footer__links-container__ul__link {
   list-style-type: none;
-  color: var(--color-secondary-brown);
+  color: var(--color-primary-dark-red);
   text-decoration: none;
 }
 
 .footer__links-container__ul__link:hover {
-  color: var(--color-secondary-brown);
+  color: var(--color-primary-dark-red);
 }
 
 .footer__logo__container {
   height: 100%;
-  color: var(--color-secondary-brown);
+  color: var(--color-primary-dark-red);
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-end;
   font-family: 'BNBergen-Light';
 }
 
 .footer__logo__container__img {
-  height: 80px;
+  width: 18vw;
+  min-width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 950px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__links-container {
+    text-align: left;
+    color: var(--color-primary-dark-red);
+    padding: 0 20px;
+  }
+
+  .footer__logo__container {
+    align-items: center;
+  }
 }

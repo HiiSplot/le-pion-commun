@@ -1,41 +1,27 @@
-import type React from "react";
-import { Link } from "../Components/link";
-import { useTranslation } from "react-i18next";
+import React from "react";
+import { BurgerMenu } from "./burger-menu";
+import { LinksContainer } from "../Components/links-container";
 import './header.css'
 
 export const Header: React.FC = () => {
-  const { t } = useTranslation()
-
-  console.log(t('header.concept'));
+  const [isMenuOpened, setIsMenuOpened] = React.useState<boolean>(false)
+  console.log(isMenuOpened);
+  
   
   return (
     <div className="header">
+      <button className="header__burger-menu" onClick={() => setIsMenuOpened(true)}>☰</button>
+      <BurgerMenu isMenuOpened={isMenuOpened} setIsMenuOpened={setIsMenuOpened} />
       <div className="header__logo">
           <a href="">
-            <img  className="header__logo__img" src="/logo-header.png" alt="logo-header" />
+            <img  className="header__logo__img__desktop" src="./logo-header.png" alt="logo-header" />
+          </a>
+          <a href="">
+            <img  className="header__logo__img__mobile" src="./logo-yellow-long.png" alt="logo-header" />
           </a>
       </div>
       <div className="header__links-container">
-        <ul className="header__links-container__ul">
-          <li>
-            <Link src="" text={t('header.concept')} className="header__links-container__ul__link" />
-          </li>
-          <li>
-            <Link src="" text={t('header.menu')}className="header__links-container__ul__link" />
-          </li>
-          <li>
-            <Link src="" text={t('header.ludotheque')}className="header__links-container__ul__link" />
-          </li>
-          <li>
-            <Link src="" text={t('header.reservation')} className="header__links-container__ul__link" />
-          </li>
-          <li>
-            <Link src="" text={t('header.partners')}className="header__links-container__ul__link" />
-          </li>
-          <li>
-            <Link src="" text={t('header.contact')}className="header__links-container__ul__link" />
-          </li>
-        </ul>
+        <LinksContainer ulClassName="header__links-container__ul" linkClassName="header__links-container__ul__link"/>
       </div>
     </div>
     )
