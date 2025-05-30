@@ -1,0 +1,16 @@
+{
+  "header": {
+    "home": "Accueil",
+    "concept": "Concept",
+    "menu": "La carte",
+    "ludotheque": "Ludothèque",
+    "reservation": "Réservation",
+    "partnaires": "Partnaires",
+    "contact": "Contact"
+  },
+  "welcome": "Bienvenue sur notre site",
+  "footer": {
+    "rights": "Tous droits réservés",
+    "about": "À propos"
+  }
+}

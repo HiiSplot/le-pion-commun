@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: var(--color-primary-dark-red);
+  padding: 2rem;
+}
+
+.header__logo__img {
+  height: 110px;
+}
+
+.header__links-container {
+  min-width: 80%;
+}
+
+.header__links-container__ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 70px;
+  list-style-type: none;
+}
+
+.header__links-container__ul__link {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-primary-light-yellow);
+  text-transform: uppercase;
+  display: inline-block; /* important pour bien gérer le ::after */
+  transition: 0.1s ease-in-out
+}
+
+.header__links-container__ul__link:hover {
+  color: var(--color-secondary-dark-burgundy);
+  transition: 0.3s ease-out
+}
+
+.header__links-container__ul__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* distance entre le texte et le soulignement */
+  width: 0;
+  height: 2px;
+  background-color: var(--color-secondary-dark-burgundy);
+  transition: width 0.3s ease;
+}
+
+.header__links-container__ul__link:hover::after {
+  width: 100%;
+}
+

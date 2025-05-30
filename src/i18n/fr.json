@@ -1,0 +1,18 @@
+{
+  "header": {
+    "home": "Accueil",
+    "concept": "Concept",
+    "menu": "La carte",
+    "ludotheque": "Ludothèque",
+    "reservation": "Réservation",
+    "partners": "Partenaires",
+    "contact": "Contact"
+  },
+  "welcome": "Bienvenue sur notre site",
+  "footer": {
+    "confidentiality": "Polique de confidentialité",
+    "cgu": "CGU",
+    "rights": "Tous droits réservés",
+    "about": "À propos"
+  }
+}

@@ -1,21 +1,39 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@font-face {
+  font-family: 'BNBergen';
+  src: url('../public/Fonts/bnbergen-webfont.woff2') format('woff2'),
+       url('../public/Fonts/bnbergen-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+@font-face {
+  font-family: 'BNBergen-Light';
+  src: url('../public/Fonts/bnbergen-light-webfont.woff2') format('woff2'),
+       url('../public/Fonts/bnbergen-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+@font-face {
+  font-family: 'BNBergen-Bold';
+  src: url('../public/Fonts/bnbergen-bold-webfont.woff2') format('woff2'),
+       url('../public/Fonts/bnbergen-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  width: 100vw;
+  font-family: 'BNBergen';
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @keyframes logo-spin {
