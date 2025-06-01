@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
         <div className='footer__logo__container'>
           <img  className="footer__logo__container__img" src="./logo-red-long.png" alt="logo-footer" />
           <div>Le pion commun © - Tous droits réservés</div>
-          <div>Site réalisé par <a href="" className='footer__links-container__ul__link'>Laura Bensimon</a></div>
+          <div>Site réalisé par <a href="https://www.linkedin.com/in/laura-bensimon/" target='_blank' className='footer__links-container__ul__link'>Laura Bensimon</a></div>
         </div>
       </div>
     </div>
