@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
             <img  className="header__logo__img__desktop" src="./logo-header.png" alt="logo-header" />
           </a>
           <a href="">
-            <img  className="header__logo__img__mobile" src="./logo-yellow-long.png" alt="logo-header" />
+            <img  className="header__logo__img__mobile" src="./logo-header.png" alt="logo-header" />
           </a>
       </div>
       <div className="header__links-container">
