@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   min-height: 110px;
-  background-color: var(--color-primary-light-yellow-60);
+  background-color: var(--color-primary-light-yellow);
   padding: 2rem;
 }
 
