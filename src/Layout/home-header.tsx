@@ -7,7 +7,7 @@ export const HomeHeader: React.FC = () => {
   const [isMenuOpened, setIsMenuOpened] = React.useState<boolean>(false)
   return (
     <>
-    <img className="home-header__image" src="./public/Photos/IMG_9245.jpg"/>
+    <img className="home-header__image" src="./Photos/IMG_9245.jpg"/>
     <header className="home-header">
       <button className="header__burger-menu" onClick={() => setIsMenuOpened(true)}>☰</button>
       <BurgerMenu isMenuOpened={isMenuOpened} setIsMenuOpened={setIsMenuOpened} />
