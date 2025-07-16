@@ -28,12 +28,13 @@
 #root {
   margin: 0 auto;
   text-align: center;
-  width: 100vw;
+  max-width: 100vw;
   font-family: 'BNBergen';
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 @keyframes logo-spin {

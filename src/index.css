@@ -37,8 +37,10 @@
 
 body {
   margin: 0;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -50,6 +52,8 @@ h1 {
   :root {
     color: #213547;
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
   }
   a:hover {
     color: #747bff;

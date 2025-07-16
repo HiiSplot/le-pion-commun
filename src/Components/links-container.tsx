@@ -12,22 +12,22 @@ export const LinksContainer: React.FC<LinksContainerPropos> = ({ ulClassName, li
   return (
     <ul className={ulClassName}>
       <li className={liClassName}>
-        <Link src="" text={t('header.concept')} className={linkClassName} />
+        <Link src="/le-pion-commun/concept" text={t('header.concept')} className={linkClassName} />
       </li>
       <li className={liClassName}>
-        <Link src="" text={t('header.menu')}className={linkClassName} />
+        <Link src="/le-pion-commun/menu" text={t('header.menu')}className={linkClassName} />
       </li>
       <li className={liClassName}>
-        <Link src="" text={t('header.ludotheque')}className={linkClassName} />
+        <Link src="/le-pion-commun/ludotheque" text={t('header.ludotheque')}className={linkClassName} />
       </li>
       <li className={liClassName}>
-        <Link src="" text={t('header.reservation')} className={linkClassName} />
+        <Link src="/le-pion-commun/reservation" text={t('header.reservation')} className={linkClassName} />
       </li>
       <li className={liClassName}>
-        <Link src="" text={t('header.partners')}className={linkClassName} />
+        <Link src="/le-pion-commun/partenaires" text={t('header.partners')}className={linkClassName} />
       </li>
       <li className={liClassName}>
-        <Link src="" text={t('header.contact')}className={linkClassName} />
+        <Link src="/le-pion-commun/contact" text={t('header.contact')}className={linkClassName} />
       </li>
     </ul>
   )

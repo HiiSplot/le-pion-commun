@@ -1,26 +1,28 @@
 import React from "react";
-import { BurgerMenu } from "./burger-menu";
 import { LinksContainer } from "../Components/links-container";
-import './header.css'
+import { BurgerMenu } from "./burger-menu";
+import './home-header.css'
 
-export const Header: React.FC = () => {
+export const HomeHeader: React.FC = () => {
   const [isMenuOpened, setIsMenuOpened] = React.useState<boolean>(false)
-  
   return (
-    <div className="header">
+    <>
+    <img className="home-header__image" src="./public/Photos/IMG_9245.jpg"/>
+    <header className="home-header">
       <button className="header__burger-menu" onClick={() => setIsMenuOpened(true)}>☰</button>
       <BurgerMenu isMenuOpened={isMenuOpened} setIsMenuOpened={setIsMenuOpened} />
-      <div className="header__logo">
+      <div className="home-header__logo">
           <a href="/le-pion-commun/">
-            <img  className="header__logo__img__desktop" src="./logo-header.png" alt="logo-header" />
+            <img  className="home-header__logo__img__desktop" src="./logo-header.png" alt="logo-header" />
           </a>
           <a href="/le-pion-commun/">
             <img  className="header__logo__img__mobile" src="./logo-header.png" alt="logo-header" />
           </a>
       </div>
-      <div className="header__links-container">
-        <LinksContainer ulClassName="header__links-container__ul" linkClassName="header__links-container__ul__link"/>
+      <div className="home-header__links" >
+        <LinksContainer ulClassName="header__links-container__ul" linkClassName="home-header__links-container__ul__link"/>
       </div>
-    </div>
-    )
+    </header>
+    </>
+  );
 }

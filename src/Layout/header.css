@@ -1,8 +1,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 90px;
+  align-items: flex-start;
+  height: 100px;
   background-color: var(--color-primary-dark-red);
   padding: 2rem;
   position: relative;
@@ -21,6 +21,10 @@
 
 .header__logo__img__desktop {
   height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translate(0, -50%);
 }
 
 .header__logo__img__mobile {
