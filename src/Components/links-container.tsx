@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { Link } from "./link"
+import { Link } from "react-router-dom"
 
 type LinksContainerPropos = {
   ulClassName: string
@@ -12,22 +12,22 @@ export const LinksContainer: React.FC<LinksContainerPropos> = ({ ulClassName, li
   return (
     <ul className={ulClassName}>
       <li className={liClassName}>
-        <Link src="/le-pion-commun/concept" text={t('header.concept')} className={linkClassName} />
+        <Link to="/concept" className={linkClassName}>{t('header.concept')}</Link>
       </li>
       <li className={liClassName}>
-        <Link src="/le-pion-commun/menu" text={t('header.menu')}className={linkClassName} />
+        <Link to="/menu" className={linkClassName}>{t('header.menu')}</Link>
       </li>
       <li className={liClassName}>
-        <Link src="/le-pion-commun/ludotheque" text={t('header.ludotheque')}className={linkClassName} />
+        <Link to="/ludotheque" className={linkClassName}>{t('header.ludotheque')}</Link>
       </li>
       <li className={liClassName}>
-        <Link src="/le-pion-commun/reservation" text={t('header.reservation')} className={linkClassName} />
+        <Link to="/reservation" className={linkClassName}>{t('header.reservation')}</Link>
       </li>
       <li className={liClassName}>
-        <Link src="/le-pion-commun/partenaires" text={t('header.partners')}className={linkClassName} />
+        <Link to="/partenaires" className={linkClassName}>{t('header.partners')}</Link>
       </li>
       <li className={liClassName}>
-        <Link src="/le-pion-commun/contact" text={t('header.contact')}className={linkClassName} />
+        <Link to="/contact" className={linkClassName}>{t('header.contact')}</Link>
       </li>
     </ul>
   )

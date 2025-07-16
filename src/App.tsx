@@ -14,7 +14,7 @@ import { ContactPage } from './Pages/Contact/ContactPage';
 
 function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
-  const isHome = location.pathname === '/le-pion-commun/';
+  const isHome = location.pathname === '/';
 
   return (
     <>
@@ -30,16 +30,16 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename="/le-pion-commun/">
       <Layout>
         <Routes>
-          <Route path="/le-pion-commun/" element={<HomePage />} />
-          <Route path="/le-pion-commun/concept" element={<ConceptPage />} />
-          <Route path="/le-pion-commun/menu" element={<MenuPage />} />
-          <Route path="/le-pion-commun/ludotheque" element={<LudothequePage />} />
-          <Route path="/le-pion-commun/reservation" element={<ReservationPage />} />
-          <Route path="/le-pion-commun/partenaires" element={<PartnersPage />} />
-          <Route path="/le-pion-commun/contact" element={<ContactPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/concept" element={<ConceptPage />} />
+          <Route path="/menu" element={<MenuPage />} />
+          <Route path="/ludotheque" element={<LudothequePage />} />
+          <Route path="/reservation" element={<ReservationPage />} />
+          <Route path="/partenaires" element={<PartnersPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

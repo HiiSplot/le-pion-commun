@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import './footer.css'
-import { Link } from '../Components/link';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation()
@@ -11,16 +11,16 @@ export const Footer: React.FC = () => {
           <div className='footer__links-container__title'>à propos</div>
           <ul className="footer__links-container__ul">
             <li>
-              <Link src="/le-pion-commun/concept" text={t('header.concept')} className="footer__links-container__ul__link" />
+              <Link to="/concept" className="footer__links-container__ul__link">{t('header.concept')}</Link>
             </li>
             <li>
-              <Link src="/le-pion-commun/menu" text={t('header.menu')}className="footer__links-container__ul__link" />
+              <Link to="menu" className="footer__links-container__ul__link">{t('header.menu')}</Link>
             </li>
             <li>
-              <Link src="/le-pion-commun/ludotheque" text={t('header.ludotheque')}className="footer__links-container__ul__link" />
+              <Link to="/ludotheque" className="footer__links-container__ul__link">{t('header.ludotheque')}</Link>
             </li>
             <li>
-              <Link src="/le-pion-commun/partenaires" text={t('header.partners')}className="footer__links-container__ul__link" />
+              <Link to="/partenaires" className="footer__links-container__ul__link">{t('header.partners')}</Link>
             </li>
           </ul>
         </div>
@@ -28,13 +28,13 @@ export const Footer: React.FC = () => {
           <div className='footer__links-container__title'>MENTIONS</div>
           <ul className="footer__links-container__ul">
             <li>
-              <Link src="/le-pion-commun/contact" text={t('header.contact')}className="footer__links-container__ul__link" />
+              <Link to="/le-pion-commun/contact" className="footer__links-container__ul__link">{t('header.contact')}</Link>
             </li>
             <li>
-              <Link src="" text={t('footer.confidentiality')}className="footer__links-container__ul__link" />
+              <Link to="" className="footer__links-container__ul__link">{t('footer.confidentiality')}</Link>
             </li>
             <li>
-              <Link src="" text={t('footer.cgu')}className="footer__links-container__ul__link" />
+              <Link to="" className="footer__links-container__ul__link">{t('footer.cgu')}</Link>
             </li>
           </ul>
         </div>
@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
                 </div>
               </ul>
               <button
-                onClick={() => window.location.href = "/le-pion-commun/reservation"}
+                onClick={() => window.location.href = "/reservation"}
                 className='footer__links-container__button'
               >
                 Réserver une table
