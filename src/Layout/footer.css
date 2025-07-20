@@ -16,6 +16,7 @@
   text-align: left;
   color: var(--color-primary-dark-red);
   padding: 0 50px;
+  white-space: nowrap;
 }
 
 .footer__links-container__title {
@@ -33,14 +34,16 @@
 
 .footer__links-container__button {
   cursor: pointer;
+  display: block;
   font-family: 'BNBergen-Bold';
   background-color: transparent;
   border: 2px solid var(--color-primary-dark-red);
   color: var(--color-primary-dark-red);
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: large;
   padding: 5px 15px;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .footer__links-container__button:hover {
@@ -55,6 +58,14 @@
   padding: 0;
   font-family: 'BNBergen-Light';
   margin: 5px 0;
+}
+
+.footer__links-container__ul__text {
+  list-style-type: none;
+  color: var(--color-primary-dark-red);
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__links-container__ul__link {
@@ -83,17 +94,13 @@
   height: auto;
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1270px) {
 
   .footer__logo__container {
     white-space: nowrap;
     font-size: 0.9em;
     justify-content: center;
   }
-  
-}
-
-@media screen and (max-width: 1000px) {
 
   .footer {
     flex-direction: column;
@@ -111,7 +118,7 @@
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
 
   .footer {
     align-items: center;

@@ -1,0 +1,25 @@
+.direction-container {
+  position: relative;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  padding: 20px;
+}
+
+.direction-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 2px;
+  background-color: var(--color-primary-light-yellow);
+}
+
+.direction-container__title {
+  font-size: 3em;
+}
+
+.direction-container__text {
+  font-family: "BNBergen-Light";
+}

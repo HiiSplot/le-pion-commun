@@ -1,0 +1,12 @@
+.concept-page {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-light-yellow-20);
+}
+
+.concept-page__text {
+  font-family: "BNBergen-Light";
+}

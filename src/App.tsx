@@ -7,10 +7,8 @@ import { HomePage } from './Pages/Home/HomePage';
 import { HomeHeader } from './Layout/home-header';
 import { MenuPage } from './Pages/Menu/MenuPage';
 import { ConceptPage } from './Pages/Concept/ConceptPage';
-import { LudothequePage } from './Pages/Ludotheque/LudothequePage';
-import { PartnersPage } from './Pages/Partners/PartnersPage';
-import { ReservationPage } from './Pages/Reservation/ReservationPage';
 import { ContactPage } from './Pages/Contact/ContactPage';
+import { AboutPage } from './Pages/A propos/a-propos';
 
 function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
@@ -36,10 +34,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/concept" element={<ConceptPage />} />
           <Route path="/menu" element={<MenuPage />} />
-          <Route path="/ludotheque" element={<LudothequePage />} />
-          <Route path="/reservation" element={<ReservationPage />} />
-          <Route path="/partenaires" element={<PartnersPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/a-propos" element={<AboutPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

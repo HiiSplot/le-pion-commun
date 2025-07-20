@@ -1,0 +1,25 @@
+.home-page {
+  background-color: var(--color-primary-light-yellow-20);
+}
+
+.home-page__flex {
+  display: flex;
+}
+
+.home-page__column {
+  background-color: var(--color-primary-dark-red-100);
+  color: var(--color-primary-light-yellow-100);
+  padding: 20px;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 950px) {
+  .home-page__flex {
+    flex-direction: column;
+  }
+
+  .home-page__column {
+    width: 100%;
+  }
+}

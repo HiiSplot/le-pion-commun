@@ -1,8 +1,10 @@
+import { ContactForm } from "../../Components/contact-form";
+import './contact-page.css'
+
 export const ContactPage: React.FC = () => {
   return (
     <div className="contact-page">
-      <h1>Welcome to the Contact Page</h1>
-      {/* Additional content can be added here */}
+      <ContactForm />
     </div>
   );
 }

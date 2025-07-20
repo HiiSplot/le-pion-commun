@@ -1,3 +1,6 @@
+import type React from "react";
+import './menu-page.css'
+
 export const MenuPage: React.FC = () => {
   return (
     <div className="menu-page">

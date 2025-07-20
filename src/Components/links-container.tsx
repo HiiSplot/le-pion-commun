@@ -18,13 +18,10 @@ export const LinksContainer: React.FC<LinksContainerPropos> = ({ ulClassName, li
         <Link to="/menu" className={linkClassName}>{t('header.menu')}</Link>
       </li>
       <li className={liClassName}>
-        <Link to="/ludotheque" className={linkClassName}>{t('header.ludotheque')}</Link>
+        <Link to="https://www.myludo.fr/#!/profil/sur-un-plateau-1993" target="_blank" className={linkClassName}>{t('header.ludotheque')}</Link>
       </li>
       <li className={liClassName}>
-        <Link to="/reservation" className={linkClassName}>{t('header.reservation')}</Link>
-      </li>
-      <li className={liClassName}>
-        <Link to="/partenaires" className={linkClassName}>{t('header.partners')}</Link>
+        <Link to="https://reservation.laddition.com/booking/sur-un-plateau#/date" target="_blank" className={linkClassName}>{t('header.reservation')}</Link>
       </li>
       <li className={liClassName}>
         <Link to="/contact" className={linkClassName}>{t('header.contact')}</Link>

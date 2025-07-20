@@ -1,0 +1,7 @@
+.menu-page {
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-light-yellow-20);
+}

@@ -27,6 +27,7 @@
 .home-header__links {
   display: flex;
   gap: 10px;
+  padding-inline-end: 20px;
 }
 
 .home-header__links-container__ul__link {
