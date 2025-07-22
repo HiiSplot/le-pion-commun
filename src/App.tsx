@@ -11,13 +11,10 @@ import { ContactPage } from './Pages/Contact/ContactPage';
 import { AboutPage } from './Pages/A propos/a-propos';
 
 function Layout({ children }: { children: React.ReactNode }) {
-  const location = useLocation();
-  const isHome = location.pathname === '/';
 
   return (
     <>
-      {!isHome && <Header />}
-      {isHome && <HomeHeader />}
+      <Header />
       {children}
       <Footer />
     </>

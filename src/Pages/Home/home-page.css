@@ -14,6 +14,16 @@
   box-sizing: border-box;
 }
 
+.home-page__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  height: calc(100vh - 185px);
+  display: block;
+  box-sizing: border-box;
+}
+
 @media screen and (max-width: 950px) {
   .home-page__flex {
     flex-direction: column;
@@ -21,5 +31,9 @@
 
   .home-page__column {
     width: 100%;
+  }
+
+  .home-page__image {
+    height: calc(100vh - 160px);
   }
 }

@@ -5,3 +5,10 @@
   justify-content: center;
   background-color: var(--color-primary-light-yellow-20);
 }
+
+@media screen and (max-width: 600px) {
+  .contact-page {
+    padding: 30px;
+    padding-bottom: 45px;
+  }
+}

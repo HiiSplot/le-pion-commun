@@ -3,7 +3,7 @@
   justify-content: space-between;
   max-width: 100vw;
   min-height: 110px;
-  background-color: var(--color-primary-light-yellow);
+  background-color: var(--color-primary-light-yellow-80);
   padding: 2rem;
 }
 
@@ -135,6 +135,10 @@
   .footer__links-container__ul {
     text-align: center;
     white-space: nowrap;
+  }
+
+  .footer__links-container__button {
+    margin-bottom: 30px;
   }
 
   .footer__links-container {
