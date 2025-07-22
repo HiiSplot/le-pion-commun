@@ -73,7 +73,7 @@
   padding: 30px;
 }
 
-.concept-page__team {
+.concept-page__team, .concept-page__team-reverse {
   display: flex;
   gap: 40px;
   align-items: center
@@ -88,4 +88,33 @@
 .concept-page__text {
   font-family: "BNBergen-Light";
   text-align: justify;
+}
+
+@media screen and (max-width: 1600px) {
+  .concept-page {
+    flex-direction: column;
+  }
+
+  .concept-page__concept, .concept-page__valeurs, .concept-page__about {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .concept-page__team__photo {
+    width: 45%;
+    border-radius: 200px;
+    height: 100%;
+  }
+
+  .concept-page__team {
+    flex-direction: column;
+  }
+
+  .concept-page__team-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .concept-page__team__photo {
+    margin-top: 50px;
+  }
 }

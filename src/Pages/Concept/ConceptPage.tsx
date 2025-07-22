@@ -30,7 +30,7 @@ export const ConceptPage: React.FC = () => {
           <p className="concept-page__text">Axelle, 27 ans,  co-gérante. 
           Je suis arrivée à Nantes en 2019, j'ai travaillé dans l'hôtellerie et ensuite dans l'animation socioculturelle. Je fais aussi de l'improvisation théâtrale et je suis une touche à tout : maquillage, aquarelle, cyanotype, photo, ukulélé... Une grande amatrice de jeux de société depuis longtemps, principalement les jeux familiaux ou stratégiques.</p>
         </div>
-        <div className="concept-page__team">
+        <div className="concept-page__team-reverse">
           <p className="concept-page__text">Chloé, 30 ans, co-gérante. 
           J'ai grandi à Nantes et y ai étudié la cuisine, le graphisme et l'animation. Pâtissière depuis 1 an et demi, je serais derrière les fourneaux du Pion Commun pour ravir vos papilles. J'ai aussi été embarquée dans l'improvisation théâtrale en 2021. J'adore découvrir de nouvelles mécaniques de jeux, les grands jeux ne me font pas peur du tout !  
           </p>
