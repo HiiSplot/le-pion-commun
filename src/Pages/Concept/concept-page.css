@@ -1,13 +1,91 @@
 .concept-page {
-  padding: 60px;
-  display: flex;
-  flex-direction: column;
-  min-height: 70vh;
-  align-items: center;
-  justify-content: center;
   background-color: var(--color-primary-light-yellow-20);
+  display: flex;
+  min-height: 70vh;
+}
+
+.concept-page__image-container {
+  position: relative;
+}
+
+.concept-page__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  height: calc(60vh - 185px);
+  display: block;
+  box-sizing: border-box;
+}
+
+.concept-page__overlay-noir {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.concept-page__title {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.concept-page__title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -40%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 4px;
+  background-color: var(--color-primary-dark-red);
+}
+
+/* .concept-page__title-yellow {
+  background-color: var(--color-primary-light-yellow);
+  color: var(--color-primary-dark-red);
+  padding: 5px;
+} */
+
+/* .concept-page__title-red {
+  background-color: var(--color-primary-dark-red);
+  color: var(--color-primary-light-yellow);
+  padding: 5px;
+} */
+
+.concept-page__concept, .concept-page__valeurs, .concept-page__about {
+  width: 33vw;
+}
+
+.concept-page__concept, .concept-page__valeurs {
+  background-color: var(--color-primary-light-yellow-20);
+  color: var(--color-primary-dark-red);
+  padding: 30px;
+}
+
+.concept-page__about {
+  background-color: var(--color-primary-light-yellow-);
+  color: var(--color-primary-dark-red);
+  padding: 30px;
+}
+
+.concept-page__team {
+  display: flex;
+  gap: 40px;
+  align-items: center
+}
+
+.concept-page__team__photo {
+  width: 25%;
+  border-radius: 100px;
+  height: 100%;
 }
 
 .concept-page__text {
   font-family: "BNBergen-Light";
+  text-align: justify;
 }

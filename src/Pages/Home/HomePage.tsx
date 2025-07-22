@@ -7,7 +7,10 @@ import { Horaires } from "../../Components/horaires";
 export const HomePage: React.FC = () => {
   return (
     <div className="home-page">
-    <img className="home-page__image" src="./Photos/IMG_9245.jpg"/>
+      <div className="home-page__image-container">
+        <img className="home-page__image" src="./Photos/IMG_9245.jpg"/>
+        <div className="home-page__overlay-noir"></div>
+      </div>
       <div className="home-page__flex">
         <Map />
         <div className="home-page__column">
