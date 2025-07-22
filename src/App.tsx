@@ -1,10 +1,9 @@
 import './App.css'
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Footer } from './Layout/footer'
 import { Header } from './Layout/header'
 import './i18n';
 import { HomePage } from './Pages/Home/HomePage';
-import { HomeHeader } from './Layout/home-header';
 import { MenuPage } from './Pages/Menu/MenuPage';
 import { ConceptPage } from './Pages/Concept/ConceptPage';
 import { ContactPage } from './Pages/Contact/ContactPage';
