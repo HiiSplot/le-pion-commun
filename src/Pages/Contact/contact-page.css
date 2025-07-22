@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-primary-light-yellow-20);
+  min-height: 70vh;
 }
 
 @media screen and (max-width: 600px) {

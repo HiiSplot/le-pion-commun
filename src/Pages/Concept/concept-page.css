@@ -2,6 +2,7 @@
   padding: 60px;
   display: flex;
   flex-direction: column;
+  min-height: 70vh;
   align-items: center;
   justify-content: center;
   background-color: var(--color-primary-light-yellow-20);
