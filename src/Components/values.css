@@ -1,0 +1,18 @@
+.valeurs__valeurs {
+  background-color: var(--color-primary-dark-red);
+  color: var(--color-primary-light-yellow);
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.valeurs__title {
+  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.valeurs__text {
+  font-family: "BNBergen-Light";
+  color: var(--color-primary-light-yellow);
+}
