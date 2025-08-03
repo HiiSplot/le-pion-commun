@@ -4,4 +4,23 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-primary-light-yellow-20);
+  height: 70vh;
+  max-height: 160vh;
+  gap: 50px;
+}
+
+.menu-page__menu {
+  height: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 0.3s ease;
+}
+
+.menu-page__menu:hover {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-page {
+    flex-direction: column;
+  }
 }
