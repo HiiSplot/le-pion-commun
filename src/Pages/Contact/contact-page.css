@@ -4,4 +4,12 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-primary-light-yellow-20);
+  min-height: 67vh;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-page {
+    padding: 30px;
+    padding-bottom: 45px;
+  }
 }

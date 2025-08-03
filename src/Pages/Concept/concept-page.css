@@ -1,12 +1,21 @@
 .concept-page {
-  padding: 60px;
+  background-color: var(--color-primary-light-yellow-20);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 80vh;
+}
+
+.values {
+  padding: 0 60px 60px 60px;
   background-color: var(--color-primary-light-yellow-20);
 }
 
-.concept-page__text {
-  font-family: "BNBergen-Light";
+@media screen and (max-width: 1260px) {
+  .concept-page {
+    flex-direction: column;
+  }
+
+  .values {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
 }

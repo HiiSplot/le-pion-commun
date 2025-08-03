@@ -10,16 +10,6 @@
   position: absolute;
 }
 
-.home-header__image {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  position: relative;
-  height: 100vh;
-  display: block;
-  box-sizing: border-box;
-}
-
 .home-header__logo__img__desktop {
   height: 120px;
 }

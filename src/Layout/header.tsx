@@ -1,14 +1,18 @@
 import React from "react";
-import { BurgerMenu } from "./burger-menu";
 import { LinksContainer } from "../Components/links-container";
 import './header.css'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { BurgerMenu } from "./burger-menu";
 
 export const Header: React.FC = () => {
   const [isMenuOpened, setIsMenuOpened] = React.useState<boolean>(false)
   
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+  
   return (
     <div className="header">
+      <img src="./Fumée/header-2.png" alt="smoke" className="header__img" />
       <button className="header__burger-menu" onClick={() => setIsMenuOpened(true)}>☰</button>
       <BurgerMenu isMenuOpened={isMenuOpened} setIsMenuOpened={setIsMenuOpened} />
       <div className="header__logo">
