@@ -16,19 +16,22 @@
 
 .home-page__image-container {
   position: relative;
+  display: flex;
+  gap: 10px;
+  width: 100%;
 }
 
 .home-page__image {
-  width: 100%;
+  flex: 1 1 0;
+  height: 50vh;
+  width: 20vh;
   object-fit: cover;
   object-position: center;
-  position: relative;
-  height: calc(100vh - 185px);
   display: block;
   box-sizing: border-box;
 }
 
-.home-page__overlay-noir {
+/* .home-page__overlay-noir {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,7 +40,7 @@
   background-color: black;
   opacity: 0.5;
   pointer-events: none;
-}
+} */
 
 @media screen and (max-width: 950px) {
   .home-page__flex {

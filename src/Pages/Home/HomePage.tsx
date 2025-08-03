@@ -8,8 +8,12 @@ export const HomePage: React.FC = () => {
   return (
     <div className="home-page">
       <div className="home-page__image-container">
-        <img className="home-page__image" src="./Photos/IMG_9245.jpg"/>
-        <div className="home-page__overlay-noir"></div>
+        <img className="home-page__image" src="./Photos/home-1.JPG"/>
+        <img className="home-page__image" src="./Photos/home-2.PNG"/>
+        <img className="home-page__image" src="./Photos/home-3.jpg"/>
+        <img className="home-page__image" src="./Photos/home-4.JPG"/>
+        <img className="home-page__image" src="./Photos/home-5.jpg"/>
+        {/* <div className="home-page__overlay-noir"></div> */}
       </div>
       <div className="home-page__flex">
         <Map />
