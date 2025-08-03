@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
 
   return (
     <div className={isHome ? "header home-header" : "header normal-header"}>
-      <img src={isHome ? "./Fumée/header-home.png" : "./Fumée/header-2.png"} alt="smoke" className={isHome ? "header__img scale" : "header__img"} />
+      <img src={isHome ? "./Fumée/header-home.png" : "./Fumée/header-2.png"} alt="smoke" className="header__img scale" />
       <button className="header__burger-menu" onClick={() => setIsMenuOpened(true)}>☰</button>
       <BurgerMenu isMenuOpened={isMenuOpened} setIsMenuOpened={setIsMenuOpened} />
       <div className="header__logo">

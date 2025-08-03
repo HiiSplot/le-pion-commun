@@ -51,7 +51,12 @@
     width: 100%;
   }
 
-  .home-page__image {
-    height: calc(100vh - 160px);
+  .home-page__image-container {
+    flex-direction: column;
   }
+
+  .home-page__image {
+    width: 100%;
+  }
+
 }

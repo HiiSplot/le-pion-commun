@@ -141,16 +141,16 @@
   .header__burger-menu {
     display: block;
   }
-  
-  .header__links-container__ul {
-    display: none
-  }
 
-  .header__logo__img__desktop {
+  .header__links-container__ul, .header__logo__img__desktop, .header__logo__img__desktop__home {
     display: none;
   }
 
   .header__logo__img__mobile {
     display: block;
+  }
+
+  .scale {
+    transform: scale(1.2);
   }
 }
