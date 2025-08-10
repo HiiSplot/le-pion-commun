@@ -178,6 +178,10 @@
     padding: 10px;
   }
 
+  .about-responsive {
+    padding: 20px;
+  }
+
   .big-font {
     margin-top: 0;
   }
@@ -243,11 +247,28 @@
     text-align: center;
   }
 
-  .responsive-text-padding {
-    padding: 0 50px;
-  }
-
   /* .text-align-center, .text-align-justify, .concept__text {
     padding: 0;
   } */
+}
+
+@media screen and (max-width: 500px) {
+
+  .about__smoke-1-image, .about__smoke-2-image {
+    display: none;
+  }
+
+  .about__text, .concept__text {
+    padding: 10px;
+  }
+  
+  .text-align-center {
+    text-align: justify;
+  }
+
+  
+  .about-responsive {
+    padding: 0px;
+  }
+
 }
