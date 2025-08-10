@@ -122,9 +122,6 @@
 }
 
 @media screen and (max-width: 1050px){
-  .header {
-    height: 70px;
-  }
 
   .header__links-container__ul {
     gap:45px;
