@@ -10,7 +10,7 @@ export const Concept: React.FC = () => {
       Produits locaux et faits maison, salle privatisable, évènements c’est le lieu idéal pour venir jouer et profiter.</p>
 
       <div className="concept__smoke">
-        <img src="./public/Fumée/concept.png" className="concept__smoke-image" alt="" />
+        <img src="./Fumée/concept.png" className="concept__smoke-image" alt="" />
       </div>
 
       <div className="concept__mobile-container">
