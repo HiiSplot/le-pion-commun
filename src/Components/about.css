@@ -1,0 +1,253 @@
+.about__about {
+  color: var(--color-primary-dark-red);
+  padding: 60px;
+  width: 50vw;
+}
+
+.about__title {
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.about__title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -40%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 4px;
+  background-color: var(--color-primary-dark-red);
+}
+
+/* .about__team, .about__team-reverse {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  position: relative;
+} */
+
+.about__team, .about__team-reverse {
+  display: grid;
+  padding: 10px;
+}
+
+.about__smoke-1 {
+  grid-area: 1 / 1;
+  padding: 40px 86px 40px 160px;
+  background-position: 20% center;
+  transform: translateX(40px);
+  z-index: 0;
+}
+
+.about__smoke-1-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scaleX(-1);
+}
+
+.about__smoke-2 {
+  grid-area: 1 / 1;
+  padding: 40px 130px 40px 75px;
+  transform: translateX(-50px);
+  z-index: 0;
+  min-height: 70%;
+}
+
+.about__smoke-2-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.about__team__photo-axelle {
+  grid-area: 1 / 1; 
+  justify-self: start;
+  align-self: center;
+  width: 200px;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  z-index: 1;
+  transform: translateX(-20px);
+}
+
+.about__team__photo-chloe {
+  grid-area: 1 / 1; 
+  justify-self: end; /* place à droite */
+  align-self: center;
+  width: 200px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  transform: translateX(30px); /* chevauche à droite */
+  z-index: 1;
+}
+
+.about__padding {
+  padding: 20px;
+}
+
+.about__text {
+  font-family: "BNBergen-Light";
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.big-font {
+  font-family: "BNBergen-Bold";
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1600px) {
+  .about__smoke-1 {
+    padding: 40px 86px 40px 150px;
+  }
+  
+}
+
+@media screen and (max-width: 1400px) {
+
+  .text-align-center {
+    text-align: justify;
+  }
+
+  .about__team, .about__team-reverse {
+    display: flex;
+  }
+  
+  .about__team__photo-axelle, .about__team__photo-chloe {
+    transform: none;
+    width: 150px;
+  }
+  /* .about__smoke-1, .about__smoke-2 {
+    grid-area: 1 / 1;
+    padding: 0;
+    background-position: 20% center;
+    transform: none;
+  } */
+
+  .about__smoke-1, .about__smoke-2 {
+    grid-area: 1 / 1;
+    padding: 0;
+    transform: translateY(-10%);
+  }
+
+  /* .about__smoke-1-image, .about__smoke-2-image {
+    display: none;
+  } */
+
+  .about__smoke-2-image {
+    height: 150%;
+    transform: translateY(-20%);
+  }
+
+  .about__smoke-1-image {
+    height: 150%;
+    transform: translateY(-20%) scaleX(-1);
+  }
+
+  .about__team__photo-axelle, .about__team__photo-chloe {
+    grid-area: 1 / 1; 
+    justify-self: start;
+    align-self: center;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    transform: none;
+  }
+
+  .responsive-padding {
+    padding: 10px;
+  }
+
+  .big-font {
+    margin-top: 0;
+  }
+
+  .about__team, .about__team-reverse {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .text-align-left, .text-align-center {
+    text-align: center;
+  }
+
+
+  .about__team {
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .about__team-reverse {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 20px;
+  }
+  .about__about {
+    box-sizing: border-box;
+    padding: 40px 20px;
+  }
+
+  .about__title {
+    font-size: 2.3em;
+  }
+
+  .text-align-center, .text-align-justify, .concept__text {
+    padding: 0 50px;
+  }
+
+  .about__team__photo {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .about__about {
+    width: 100%;
+  }
+
+  .about__smoke-2-image {
+    height: 180%;
+    transform: translateY(-25%);
+  }
+
+  .about__smoke-1-image {
+    height: 180%;
+    transform: translateY(-25%) scaleX(-1);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .text-align-center {
+    text-align: center;
+  }
+
+  .responsive-text-padding {
+    padding: 0 50px;
+  }
+
+  /* .text-align-center, .text-align-justify, .concept__text {
+    padding: 0;
+  } */
+}

@@ -1,0 +1,19 @@
+.horaires-container {
+  padding: 30px;
+}
+
+.horaires-container__title {
+  font-size: 3em;
+}
+
+.horaires-container__text {
+  font-family: "BNBergen-Light";
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .horaires-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

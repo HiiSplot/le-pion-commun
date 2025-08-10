@@ -1,0 +1,21 @@
+.concept-page {
+  background-color: var(--color-primary-light-yellow-40);
+  display: flex;
+  min-height: 80vh;
+}
+
+.values {
+  padding: 0 60px 60px 60px;
+  background-color: var(--color-primary-light-yellow-40);
+}
+
+@media screen and (max-width: 1260px) {
+  .concept-page {
+    flex-direction: column;
+  }
+
+  .values {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+}

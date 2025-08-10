@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import './footer.css'
-import { Link } from '../Components/link';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation()
@@ -8,19 +8,42 @@ export const Footer: React.FC = () => {
     <div className="footer">
       <div className='footer-container'>
         <div className='footer__links-container'>
+          <div className='footer__links-container__title'>Horaires</div>
+          <ul className="footer__links-container__ul">
+            <li>
+              <p className="footer__links-container__ul__text">Lundi: 17h - 00h</p>
+            </li>
+            <li>
+              <p className="footer__links-container__ul__text">Mardi: Fermé</p>
+            </li>
+            <li>
+              <p className="footer__links-container__ul__text">Mercredi: 17h - 00h</p>
+            </li>
+            <li>
+              <p className="footer__links-container__ul__text">Jeudi: 17h - 00h</p>
+            </li>
+            <li>
+              <p className="footer__links-container__ul__text">Vendredi: 17h - 1h</p>
+            </li>
+            <li>
+              <p className="footer__links-container__ul__text">Samedi: 14h - 1h</p>
+            </li>
+            <li>
+              <p className="footer__links-container__ul__text">Dimanche: 14h - 21h</p>
+            </li>
+          </ul>
+        </div>
+        <div className='footer__links-container'>
           <div className='footer__links-container__title'>à propos</div>
           <ul className="footer__links-container__ul">
             <li>
-              <Link src="" text={t('header.concept')} className="footer__links-container__ul__link" />
+              <Link to="/concept" className="footer__links-container__ul__link">{t('header.concept')}</Link>
             </li>
             <li>
-              <Link src="" text={t('header.menu')}className="footer__links-container__ul__link" />
+              <Link to="menu" className="footer__links-container__ul__link">{t('header.menu')}</Link>
             </li>
             <li>
-              <Link src="" text={t('header.ludotheque')}className="footer__links-container__ul__link" />
-            </li>
-            <li>
-              <Link src="" text={t('header.partners')}className="footer__links-container__ul__link" />
+              <Link to="https://www.myludo.fr/#!/profil/sur-un-plateau-1993" target="_blank" className="footer__links-container__ul__link">{t('header.ludotheque')}</Link>
             </li>
           </ul>
         </div>
@@ -28,13 +51,19 @@ export const Footer: React.FC = () => {
           <div className='footer__links-container__title'>MENTIONS</div>
           <ul className="footer__links-container__ul">
             <li>
-              <Link src="" text={t('header.contact')}className="footer__links-container__ul__link" />
+              <Link to="/contact" className="footer__links-container__ul__link">{t('header.contact')}</Link>
             </li>
             <li>
-              <Link src="" text={t('footer.confidentiality')}className="footer__links-container__ul__link" />
+              <Link to="/concept" className="footer__links-container__ul__link">{t('header.about')}</Link>
             </li>
             <li>
-              <Link src="" text={t('footer.cgu')}className="footer__links-container__ul__link" />
+              <Link to="/concept" className="footer__links-container__ul__link">{t('header.valeurs')}</Link>
+            </li>
+            <li>
+              <Link to="" className="footer__links-container__ul__link">{t('footer.confidentiality')}</Link>
+            </li>
+            <li>
+              <Link to="" className="footer__links-container__ul__link">{t('footer.cgu')}</Link>
             </li>
           </ul>
         </div>
@@ -47,7 +76,13 @@ export const Footer: React.FC = () => {
                   <i className="fa-brands fa-instagram" style={{ fontSize: '22px'}}></i>
                 </div>
               </ul>
-              <button className='footer__links-container__button'>Réserver une table</button>
+              <a
+                href="https://reservation.laddition.com/booking/sur-un-plateau#/date"
+                target="_blank"
+                className='footer__links-container__button'
+              >
+                Réserver une table
+              </a>
           </div>
         </div>
       </div>

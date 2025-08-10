@@ -1,0 +1,34 @@
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 40px;
+  color: var(--color-primary-dark-red);
+  box-sizing: border-box;
+}
+
+.map-width {
+  width: 100%;
+}
+
+.map-container__title {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 950px) {
+  .map-container {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .map-container__title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  font-size: 2.2em;
+  }
+
+  .map-width {
+    width: 95%;
+  }
+}

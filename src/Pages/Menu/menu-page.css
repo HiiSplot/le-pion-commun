@@ -1,0 +1,30 @@
+.menu-page {
+  padding: 60px;
+  background-color: var(--color-primary-light-yellow-40);
+}
+
+.menu-page__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  min-height: 70vh;
+}
+
+.menu-page__menu {
+  height: 60vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 0.3s ease;
+}
+
+.menu-page__menu:hover {
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 500px) {
+  .menu-page__menu:hover {
+    transform: scale(1);
+  }
+}

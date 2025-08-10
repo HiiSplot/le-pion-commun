@@ -1,12 +1,14 @@
 {
   "header": {
     "home": "Accueil",
-    "concept": "Concept",
+    "concept": "Notre univers",
     "menu": "La carte",
     "ludotheque": "Ludothèque",
     "reservation": "Réservation",
     "partners": "Partenaires",
-    "contact": "Contact"
+    "contact": "Contact",
+    "about": "Qui sommes-nous ?",
+    "valeurs": "Nos valeurs"
   },
   "welcome": "Bienvenue sur notre site",
   "footer": {

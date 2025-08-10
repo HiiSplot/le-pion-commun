@@ -1,11 +1,39 @@
 .header {
+  background-color: var(--color-primary-dark-red);
+  padding: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.normal-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 90px;
-  background-color: var(--color-primary-dark-red);
-  padding: 2rem;
-  position: relative;
+  align-items: end;
+  height: 120px;
+}
+
+.home-header {
+  display: flex;
+  align-items: end;
+  height: 40vh;
+}
+
+.header__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.scale {
+  transform: scale(1.1);
 }
 
 .header__burger-menu {
@@ -21,16 +49,36 @@
 
 .header__logo__img__desktop {
   height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translate(0, -50%);
+}
+
+.header__logo__img__desktop__home {
+  height: 170px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
 }
 
 .header__logo__img__mobile {
-  width: 60vw;
-  height: auto;
+  height: 11vh;
   display: none;
+  position: relative;
+  z-index: 1;
 }
 
 .header__links-container {
   min-width: 80%;
+  padding-inline-end: 20px;
+}
+
+.header__links-container__home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .header__links-container__ul {
@@ -39,7 +87,8 @@
   justify-content: flex-end;
   gap: 70px;
   list-style-type: none;
-  font-size: clamp(0.6rem, 1.1vw, 2rem);
+  font-size: clamp(0.9rem, 1.3vw, 2rem);
+  margin-bottom: 0;
 }
 
 .header__links-container__ul__link {
@@ -53,7 +102,7 @@
 }
 
 .header__links-container__ul__link:hover {
-  color: var(--color-secondary-dark-burgundy);
+  color: var(--color-secondary-orange);
   transition: 0.3s ease-out
 }
 
@@ -64,7 +113,7 @@
   bottom: -4px; 
   width: 0;
   height: 2px;
-  background-color: var(--color-secondary-dark-burgundy);
+  background-color: var(--color-secondary-orange);
   transition: width 0.3s ease;
 }
 
@@ -82,29 +131,48 @@
   }
 
   .header__logo__img__desktop {
-    height: 80px;
+    height: 10vh;
   }
 }
 
 @media screen and (max-width: 950px) {
 
+  .header {
+    height: 90px;
+  }
+
+  .home-header, .normal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    flex-direction: column;
+  }
+
   .header__burger-menu {
     display: block;
   }
-  
-  .header__links-container__ul {
-    display:none
+
+  .header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.4);
   }
 
-  .header__logo__img__desktop {
-    display:none;
+  .header__links-container__ul, .header__logo__img__desktop, .header__logo__img__desktop__home {
+    display: none;
   }
 
   .header__logo__img__mobile {
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
+  }
+
+  .scale {
+    transform: scale(1.5);
+  }
+
+  .width-100 {
+    transform: scale(1.2);
   }
 }
