@@ -21,17 +21,58 @@
   background-color: var(--color-primary-dark-red);
 }
 
-.about__team, .about__team-reverse {
+/* .about__team, .about__team-reverse {
   display: flex;
-  gap: 40px;
   align-items: center;
   padding: 0 10px;
+  position: relative;
+} */
+
+.about__team, .about__team-reverse {
+  position: relative;
+  display: grid;
+  padding: 10px;
 }
 
-.about__team__photo {
-  width: 20%;
-  border-radius: 200px;
-  height: 100%;
+.about__smoke-1 {
+  grid-area: 1 / 1;
+  background: url(../../public/Fumée/about-6.png) right / 105% no-repeat;
+  padding: 40px 86px 40px 160px;
+  background-position: 20% center;
+  transform: translateX(40px);
+  z-index: 0;
+}
+
+.about__smoke-2 {
+  grid-area: 1 / 1;
+  background: url(../../public/Fumée/about-5.png) center / 105% no-repeat;
+  padding: 40px 130px 40px 56px;
+  transform: translateX(-50px);
+  z-index: 0;
+}
+
+.about__team__photo-axelle {
+  grid-area: 1 / 1; 
+  justify-self: start;
+  align-self: center;
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+  transform: translateX(-20px);
+}
+
+.about__team__photo-chloe {
+  grid-area: 1 / 1; 
+  justify-self: end; /* place à droite */
+  align-self: center;
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: translateX(50px); /* chevauche à droite */
+  z-index: 1;
 }
 
 .about__padding {
@@ -40,7 +81,18 @@
 
 .about__text {
   font-family: "BNBergen-Light";
+}
+
+.text-align-justify {
   text-align: justify;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .big-font {

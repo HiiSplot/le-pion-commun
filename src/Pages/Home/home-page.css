@@ -1,5 +1,5 @@
 .home-page {
-  background-color: var(--color-primary-light-yellow-20);
+  background-color: var(--color-primary-light-yellow-40);
 }
 
 .home-page__flex {
@@ -51,12 +51,17 @@
     width: 100%;
   }
 
-  .home-page__image-container {
+  /* .home-page__image-container {
     flex-direction: column;
+  } */
+
+  .home-page__image-container .home-page__image:nth-child(3),
+  .home-page__image-container .home-page__image:nth-child(4) {
+    display: none;
   }
 
   .home-page__image {
-    width: 100%;
+    height: 25vh;
   }
 
 }

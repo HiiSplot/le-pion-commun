@@ -21,6 +21,11 @@
   background-color: var(--color-primary-dark-red);
 }
 
+.concept__smoke {
+  background: url(../../public/Fumée/concept.png) center / 100% no-repeat;
+  height: 60%;
+}
+
 .concept__text {
   font-family: "BNBergen-Light";
   text-align: justify;

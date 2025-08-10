@@ -141,8 +141,23 @@
     height: 90px;
   }
 
+  .home-header, .normal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    flex-direction: column;
+  }
+
   .header__burger-menu {
     display: block;
+  }
+
+  .header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.4);
   }
 
   .header__links-container__ul, .header__logo__img__desktop, .header__logo__img__desktop__home {
@@ -154,6 +169,10 @@
   }
 
   .scale {
+    transform: scale(1.5);
+  }
+
+  .width-100 {
     transform: scale(1.2);
   }
 }

@@ -5,7 +5,6 @@ import { HomePage } from './Pages/Home/HomePage';
 import { MenuPage } from './Pages/Menu/MenuPage';
 import { ConceptPage } from './Pages/Concept/ConceptPage';
 import { ContactPage } from './Pages/Contact/ContactPage';
-import { AboutPage } from './Pages/A propos/a-propos';
 import './App.css'
 import './i18n';
 
@@ -31,7 +30,6 @@ function App() {
           <Route path="/concept" element={<ConceptPage />} />
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/a-propos" element={<AboutPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

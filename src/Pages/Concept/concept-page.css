@@ -1,12 +1,12 @@
 .concept-page {
-  background-color: var(--color-primary-light-yellow-20);
+  background-color: var(--color-primary-light-yellow-40);
   display: flex;
   min-height: 80vh;
 }
 
 .values {
   padding: 0 60px 60px 60px;
-  background-color: var(--color-primary-light-yellow-20);
+  background-color: var(--color-primary-light-yellow-40);
 }
 
 @media screen and (max-width: 1260px) {
