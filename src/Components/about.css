@@ -29,7 +29,6 @@
 } */
 
 .about__team, .about__team-reverse {
-  position: relative;
   display: grid;
   padding: 10px;
 }
@@ -56,9 +55,9 @@
   justify-self: start;
   align-self: center;
   width: 200px;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
   z-index: 1;
   transform: translateX(-20px);
 }
@@ -68,9 +67,8 @@
   justify-self: end; /* place à droite */
   align-self: center;
   width: 200px;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  object-fit: cover;
+  aspect-ratio: auto;
+  object-fit: contain;
   transform: translateX(50px); /* chevauche à droite */
   z-index: 1;
 }
@@ -101,23 +99,63 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1400px) {
+  .about__smoke-1, .about__smoke-2 {
+    background: none;
+    padding: 0;
+  }
+
+  .about__team, .about__team-reverse {
+    display: flex;
+  }
+
+  .text-align-center {
+    text-align: justify;
+  }
+  
+  .about__team__photo-axelle, .about__team__photo-chloe {
+    transform: none;
+    width: 150px;
+  }
+  
+}
+
 @media screen and (max-width: 1260px) {
-  .about__about {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 40px 20px;
+  .about__smoke-1, .about__smoke-2 {
+    background: none;
+    grid-area: 1 / 1;
+    padding: 0;
+    background-position: 20% center;
+    transform: none;
   }
 
-  .about__title {
-    font-size: 2.4em;
+  .about__team__photo-axelle, .about__team__photo-chloe {
+    grid-area: 1 / 1; 
+    justify-self: start;
+    align-self: center;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    transform: none;
   }
 
-  .about__team__photo {
-    width: 45%;
-    max-width: 45%;
-    border-radius: 600px;
-    height: 100%;
+  .responsive-padding {
+    padding: 10px;
   }
+
+  .big-font {
+    margin-top: 0;
+  }
+
+  .about__team, .about__team-reverse {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .text-align-left, .text-align-center {
+    text-align: center;
+  }
+
 
   .about__team {
     flex-direction: column;
@@ -130,8 +168,31 @@
     padding: 0;
     gap: 20px;
   }
+  .about__about {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 20px;
+  }
+
+  .about__title {
+    font-size: 2.3em;
+  }
+
+  .text-align-center, .text-align-justify, .concept__text {
+    padding: 0 50px;
+  }
 
   .about__team__photo {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .text-align-center {
+    text-align: justify;
+  }
+
+  .text-align-center, .text-align-justify, .concept__text {
+    padding: 0;
   }
 }

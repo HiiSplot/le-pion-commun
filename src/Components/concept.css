@@ -26,6 +26,10 @@
   height: 60%;
 }
 
+.concept__mobile-container {
+  display: none;
+}
+
 .concept__text {
   font-family: "BNBergen-Light";
   text-align: justify;
@@ -71,11 +75,25 @@
   transition: 0.2s ease;
 }
 
+@media screen and (max-width: 1400px) {
+  .concept__smoke {
+    height: 55%;
+  }
+}
+
 @media screen and (max-width: 1260px) {
   .concept__concept {
     width: 100%;
     box-sizing: border-box;
     padding: 50px 20px;
+  }
+
+  .concept__smoke {
+    display: none;
+  }
+
+  .concept__mobile-container {
+    display: block;
   }
 
   .concept__title {
