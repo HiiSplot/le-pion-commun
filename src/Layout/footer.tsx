@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
               <Link to="menu" className="footer__links-container__ul__link">{t('header.menu')}</Link>
             </li>
             <li>
-              <Link to="https://www.myludo.fr/#!/profil/sur-un-plateau-1993" target="_blank" className="footer__links-container__ul__link">{t('header.ludotheque')}</Link>
+              <Link to="https://www.myludo.fr/#!/profil/le-pion-commun-1993" target="_blank" className="footer__links-container__ul__link">{t('header.ludotheque')}</Link>
             </li>
           </ul>
         </div>

@@ -79,6 +79,13 @@
   transition: 0.2s ease;
 }
 
+.status-email {
+  background-color: var(--color-primary-dark-red);
+  border-radius: 3px;
+  color: var(--color-primary-light-yellow);
+  padding: 10px;
+}
+
 @media screen and (max-width: 1000px) {
   .form-container {
     width: 100%;

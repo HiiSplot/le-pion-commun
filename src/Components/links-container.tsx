@@ -19,7 +19,7 @@ export const LinksContainer: React.FC<LinksContainerPropos> = ({ ulClassName, li
         <Link onClick={onClick} to="/menu" className={linkClassName}>{t('header.menu')}</Link>
       </li>
       <li className={liClassName}>
-        <Link onClick={onClick} to="https://www.myludo.fr/#!/profil/sur-un-plateau-1993" target="_blank" className={linkClassName}>{t('header.ludotheque')}</Link>
+        <Link onClick={onClick} to="https://www.myludo.fr/#!/profil/le-pion-commun-1993" target="_blank" className={linkClassName}>{t('header.ludotheque')}</Link>
       </li>
       <li className={liClassName}>
         <Link onClick={onClick} to="https://reservation.laddition.com/booking/sur-un-plateau#/date" target="_blank" className={linkClassName}>{t('header.reservation')}</Link>
