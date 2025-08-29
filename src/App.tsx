@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter basename="/le-pion-commun/">
+    <BrowserRouter>
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />

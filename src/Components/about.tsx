@@ -11,7 +11,7 @@ export const About: React.FC = () => {
       <div className="about__team">
         <img className="about__team__photo-axelle" src="./Photos/Axelle.png" alt="Axelle" />
           <div className="about__smoke-1">
-            <img src="./Fumée/about-5.png" className="about__smoke-1-image" alt="" />
+            <img src="./Fumee/about-5.png" className="about__smoke-1-image" alt="" />
             <div className="responsive-padding"></div>
             <p className="about__text title-align-center big-font" style={{ marginBottom: '10px'}} >Axelle -  co-gérante</p>
             <p className="about__text text-align-center" style={{ marginTop: '0px'}} >Je suis arrivée à Nantes en 2019, j'ai travaillé dans l'hôtellerie et ensuite dans l'animation socioculturelle. Je fais aussi de l'improvisation théâtrale et je suis une touche à tout : maquillage, aquarelle, cyanotype, photo, ukulélé... Une grande amatrice de jeux de société depuis longtemps, principalement les jeux familiaux ou stratégiques.</p>
@@ -21,7 +21,7 @@ export const About: React.FC = () => {
       <div className="about-responsive"></div>
       <div className="about__team-reverse">
         <div className="about__smoke-2">
-            <img src="./Fumée/about-5.png" className="about__smoke-2-image" alt="" />
+            <img src="./Fumee/about-5.png" className="about__smoke-2-image" alt="" />
           <div className="responsive-padding"></div>
           <p className="about__text title-align-center big-font" style={{ marginBottom: '10px'}} >Chloé - co-gérante</p>
           <p className="about__text text-align-center" style={{ marginTop: '0px'}} >J'ai grandi à Nantes et y ai étudié la cuisine, le graphisme et l'animation. Pâtissière depuis 1 an et demi, je serais derrière les fourneaux du Pion Commun pour ravir vos papilles. J'ai aussi été embarquée dans l'improvisation théâtrale en 2021. J'adore découvrir de nouvelles mécaniques de jeux, les grands jeux ne me font pas peur du tout !</p>

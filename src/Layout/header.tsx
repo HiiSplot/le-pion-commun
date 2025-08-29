@@ -8,11 +8,11 @@ export const Header: React.FC = () => {
   const [isMenuOpened, setIsMenuOpened] = React.useState<boolean>(false)
   
   const location = useLocation();
-  const isHome = location.pathname === '/' || location.pathname === '/le-pion-commun/';
+  const isHome = location.pathname === '/';
 
   return (
     <div className={isHome ? "header home-header" : "header normal-header"}>
-      <img src={isHome ? "./Fumée/header-home.png" : "./Fumée/header-2.png"} alt="smoke" className={isHome ? "header__img width-100" : "header__img scale"} />
+      <img src={isHome ? "./Fumee/header-home.png" : "./Fumee/header-2.png"} alt="smoke" className={isHome ? "header__img width-100" : "header__img scale"} />
       <button className="header__burger-menu" onClick={() => setIsMenuOpened(true)}>☰</button>
       <BurgerMenu isMenuOpened={isMenuOpened} setIsMenuOpened={setIsMenuOpened} />
       <div className="header__logo">

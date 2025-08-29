@@ -1,5 +1,6 @@
-import React, { useState, type FormEvent } from "react";
-import emailjs from "@emailjs/browser"; 
+import React, { useState, useRef, type FormEvent } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "@emailjs/browser";
 import "./contact.form.css";
 
 export const ContactForm: React.FC = () => {
@@ -13,6 +14,8 @@ export const ContactForm: React.FC = () => {
 
   const [isSending, setIsSending] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
+  const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -21,23 +24,34 @@ export const ContactForm: React.FC = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleCaptchaChange = (value: string | null) => {
+    setCaptchaValue(value);
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setIsSending(true);
     setStatus(null);
+
+    if (!captchaValue) {
+      setStatus("Veuillez valider le reCAPTCHA");
+      return;
+    }
+
+    setIsSending(true);
 
     emailjs
       .send(
-        "service_xxx", // ID du service EmailJS
-        "template_xxx", // ID du template
-        {
-          nom: formData.nom,
-          prenom: formData.prenom,
-          telephone: formData.telephone,
+        "service_nrelfnh",
+        "template_8adiq7c",
+        {    
+          name: formData.prenom,
+          lastname: formData.nom,
           email: formData.email,
+          phone: formData.telephone,
           message: formData.message,
+          "g-recaptcha-response": captchaValue,
         },
-        "YOUR_PUBLIC_KEY" // Clé publique EmailJS
+        "RnDdA8ugbNfHqFFEb"
       )
       .then(() => {
         setStatus("Message envoyé avec succès !");
@@ -49,9 +63,11 @@ export const ContactForm: React.FC = () => {
           email: "",
           message: "",
         });
+        setCaptchaValue(null);
+        recaptchaRef.current?.reset();
       })
       .catch(() => {
-        setStatus("Erreur lors de l’envoi, veuillez réessayer");
+        setStatus("Erreur lors de l’envoi, veuillez réessayer.");
         setIsSending(false);
       });
   };
@@ -61,10 +77,9 @@ export const ContactForm: React.FC = () => {
       <fieldset className="fieldset">
         <legend className="title">Contactez-nous</legend>
         <form onSubmit={handleSubmit} className="form">
-
           <div className="input-container">
             <label>Nom</label>
-            <br/>
+            <br />
             <input
               type="text"
               name="nom"
@@ -77,7 +92,7 @@ export const ContactForm: React.FC = () => {
 
           <div className="input-container">
             <label>Prénom</label>
-            <br/>
+            <br />
             <input
               type="text"
               name="prenom"
@@ -90,7 +105,7 @@ export const ContactForm: React.FC = () => {
 
           <div className="input-container">
             <label>Téléphone</label>
-            <br/>
+            <br />
             <input
               type="tel"
               name="telephone"
@@ -103,7 +118,7 @@ export const ContactForm: React.FC = () => {
 
           <div className="input-container">
             <label>Email</label>
-            <br/>
+            <br />
             <input
               type="email"
               name="email"
@@ -116,7 +131,7 @@ export const ContactForm: React.FC = () => {
 
           <div className="input-container">
             <label>Message</label>
-            <br/>
+            <br />
             <textarea
               name="message"
               required
@@ -126,12 +141,22 @@ export const ContactForm: React.FC = () => {
               className="text-area"
             />
           </div>
+          <br />
+
+          <div className="recaptcha-container">
+            <ReCAPTCHA
+              sitekey="6Ld-LrYrAAAAAIDO545T5xS4vnjVXYwDbBmAJxXK"
+              onChange={handleCaptchaChange}
+              ref={recaptchaRef}
+            />
+          </div>
+          
+          {status && <p className="status-email">{status}</p>}
 
           <button type="submit" className="submit" disabled={isSending}>
             {isSending ? "Envoi en cours..." : "Envoyer"}
           </button>
 
-          {status && <p className="status-email">{status}</p>}
         </form>
       </fieldset>
     </div>

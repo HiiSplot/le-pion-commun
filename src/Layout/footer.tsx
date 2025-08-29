@@ -72,10 +72,14 @@ export const Footer: React.FC = () => {
             <div className='footer__links-container__title'>Réseaux</div>
               <ul className="footer__links-container__ul">
                 <div className='footer__links-container__icons'>
-                  <i className="fa-brands fa-facebook" style={{ fontSize: '22px'}}></i>
-                  <i className="fa-brands fa-instagram" style={{ fontSize: '22px'}}></i>
+                  <a href='https://www.facebook.com/lepioncommun/' className='footer__links-container__ul__link' target='_blank' rel='noopener noreferrer'><i className="fa-brands fa-facebook" style={{ fontSize: '22px'}}></i></a>
+                  <a href='https://www.instagram.com/lepioncommun/' className='footer__links-container__ul__link' target='_blank' rel='noopener noreferrer'><i className="fa-brands fa-instagram" style={{ fontSize: '22px'}}></i></a>
                 </div>
               </ul>
+                <div className='footer__padding'></div>
+                
+                <div className='footer__links-container__title'>Téléphone</div>
+                <p className='footer__links-container__ul__text'>02 59 16 44 79</p>
               <a
                 href="https://reservation.laddition.com/booking/sur-un-plateau#/date"
                 target="_blank"
