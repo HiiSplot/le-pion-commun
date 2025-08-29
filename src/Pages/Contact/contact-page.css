@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-primary-light-yellow-40);
   min-height: 67vh;
 }
 

@@ -60,10 +60,10 @@ export const Footer: React.FC = () => {
               <Link to="/concept" className="footer__links-container__ul__link">{t('header.valeurs')}</Link>
             </li>
             <li>
-              <Link to="" className="footer__links-container__ul__link">{t('footer.confidentiality')}</Link>
+              <Link to="/politique-de-confidentialite" className="footer__links-container__ul__link">{t('footer.confidentiality')}</Link>
             </li>
             <li>
-              <Link to="" className="footer__links-container__ul__link">{t('footer.cgu')}</Link>
+              <Link to="/cgu" className="footer__links-container__ul__link">{t('footer.cgu')}</Link>
             </li>
           </ul>
         </div>

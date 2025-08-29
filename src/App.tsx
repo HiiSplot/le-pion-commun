@@ -7,6 +7,8 @@ import { ConceptPage } from './Pages/Concept/ConceptPage';
 import { ContactPage } from './Pages/Contact/ContactPage';
 import './App.css'
 import './i18n';
+import { PolitiquePage } from './Pages/Politique/PolitiquePage';
+import { CGUPage } from './Pages/CGU/CGUPage';
 
 function Layout({ children }: { children: React.ReactNode }) {
 
@@ -30,6 +32,8 @@ function App() {
           <Route path="/concept" element={<ConceptPage />} />
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/politique-de-confidentialite" element={<PolitiquePage />} />
+          <Route path="/cgu" element={<CGUPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>
